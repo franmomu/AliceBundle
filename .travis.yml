@@ -9,6 +9,7 @@ php:
 branches:
   only:
     - master
+    - phpunit
 
 env:
   global:
