@@ -59,7 +59,7 @@ before_install:
       PHPUNIT_BIN="php -d zend.enable_gc=0 $PHPUNIT_BIN"
     fi
   - mysql -u root -e 'create database hautelook_alice_bundle;'
-  - if [[ $LINT = "1" ]]; then wget https://github.com/FriendsOfPHP/PHP-CS-Fixer/releases/download/v2.12.1/php-cs-fixer.phar; fi
+  - if [[ $LINT = "1" ]]; then wget https://github.com/FriendsOfPHP/PHP-CS-Fixer/releases/download/v2.16.4/php-cs-fixer.phar; fi
 
 install:
   - composer update --prefer-dist $COMPOSER_FLAGS
